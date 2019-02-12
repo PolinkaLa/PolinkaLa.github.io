@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*:focus {
+  outline: 1px solid #ffffff;
+}
+header {
+  height: 7vh;
+  background: #323232;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 50%;
+  margin: 0 auto;
+}
+header nav ul li {
+  list-style-type: none;
+  margin: 0 auto;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-family: Lato;
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 4;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+}
+header nav ul li .logo {
+  background: url(../img/Logo.png) no-repeat;
+  width: 180px;
+  height: 89px;
+  margin-top: 1rem;
+  background-size: cover;
+}
+header nav ul li a:hover {
+  color: #2eb398;
+}
+main .content {
+  width: 60%;
+  display: flex;
+  margin: 0 auto;
+  padding-top: 7vh;
+  transition: all 2s ease-out;
+  overflow-x: hidden;
+}
+main section.carusel {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+main section.carusel div {
+  display: flex;
+  flex-wrap: wrap;
+}
+main section.carusel img {
+  display: block;
+  width: 180px;
+  height: 206px;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  margin-left: 20px;
+  margin-right: 20px;
+  transition: all 2s ease-out;
+}
+main section.carusel img:hover {
+  transform: scale(1.2);
+  animation: anim 2s infinite;
+}
+@keyframes anim {
+  0% {
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  }
+  10% {
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+  }
+  20% {
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  }
+  30% {
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+  }
+  40% {
+    clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+  }
+  50% {
+    clip-path: circle(50% at 50% 50%);
+  }
+  60% {
+    clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+  }
+  70% {
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+  }
+  80% {
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  }
+  90% {
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+  }
+  100% {
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  }
+}
+main section.about {
+  height: fit-content;
+  background: #2eb398;
+}
+main section.about .content {
+  justify-content: space-around;
+}
+main section.about img {
+  display: block;
+  width: 180px;
+  height: 206px;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  transition: all 2s ease-out;
+}
+main section.about img:hover {
+  transform: scale(1.2);
+}
+main section.about article {
+  width: 60%;
+  padding-bottom: 7vh;
+}
+main section.about h2 {
+  font-family: MavenProRegular;
+  color: #d8fcf5;
+  font-size: 1.875rem;
+  font-weight: 400;
+  text-align: justify;
+  width: 40em;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: type 5s steps(50, end);
+}
+main section.about h3 {
+  font-family: MavenProRegular;
+  color: #1f816d;
+  font-size: 1.125rem;
+  font-weight: 400;
+  text-align: justify;
+}
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+main section.about p {
+  padding-top: 2vh;
+  font-family: Lato;
+  color: #d7fcf5;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: justify;
+}
+main section.about p a {
+  text-decoration: none;
+  color: #a5dcd5;
+  font-size: 1.5rem;
+}
+main section.about p a:hover {
+  color: #6cccbf;
+}
+main section.about p:last-child {
+  text-align: right;
+}
+main section.touch {
+  height: fit-content;
+  background: #323232;
+  padding-bottom: 6.5rem;
+}
+main section.touch h2 {
+  font-family: 'Maven Pro', sans-serif;
+  color: #e0e0e0;
+  font-size: 1.875rem;
+  font-weight: 400;
+  text-align: justify;
+}
+main section.touch h3 {
+  font-family: 'Maven Pro', sans-serif;
+  color: #bebebe;
+  font-size: 1.125rem;
+  font-weight: 400;
+  text-align: justify;
+}
+main section.touch .content {
+  justify-content: space-around;
+}
+main section.touch article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+main section.touch article form {
+  padding-top: 2vh;
+  height: 60%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+main section.touch article form input[type='submit'] {
+  background-color: #2eb398;
+  width: 90px;
+  height: 37px;
+  border: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: Lato;
+}
+main section.touch article form input[type='text'],
+main section.touch article form input[type='email'],
+main section.touch article form textarea {
+  background-color: #454545;
+  height: 38px;
+  border: none;
+  padding-left: 10px;
+  font-family: Lato;
+  color: #bebebe;
+  font-size: 0.701rem;
+  font-weight: 400;
+  line-height: 1.922;
+  width: 100%;
+  margin-bottom: 15px;
+}
+main section.touch article form input:focus,
+main section.touch article form textarea:focus {
+  outline: 1px solid #ffffff;
+}
+main section.touch article form textarea {
+  height: 20vh;
+  resize: none;
+  padding-top: 10px;
+}
+main section.touch article p {
+  font-family: Lato;
+  color: #bebebe;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: justify;
+}
+main section.touch article:first-child {
+  width: 50%;
+}
+main section.touch article:last-child {
+  justify-content: flex-start;
+  margin-top: calc(5rem);
+  width: 20%;
+}
+main section.touch article:last-child p {
+  margin-bottom: 20px;
+}
+main section.touch article:last-child p i {
+  color: #2eb398;
+}
+main section.touch article:last-child p:first-child {
+  margin-bottom: 50px;
+}
+footer {
+  height: 5vh;
+  background: #222222;
+}
+footer p {
+  font-family: 'Maven Pro', sans-serif;
+  color: #454545;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 3;
+  margin-left: 3rem;
+}
+@media screen and (max-width: 1200px) {
+  section.carusel div:first-child,
+  section.carusel div:last-child {
+    display: none;
+  }
+  main section.carusel div {
+    justify-content: center;
+  }
+  header nav ul li a {
+    font-size: 0.9rem;
+  }
+  header nav ul {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  main .content {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .touch .content {
+    flex-direction: column;
+    align-items: center;
+  }
+  main section.touch article:last-child {
+    width: 70%;
+  }
+  main section.carusel img {
+    width: 100px;
+    height: 114px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about .content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about .content img {
+    margin-bottom: 20px;
+  }
+  main section.touch article:first-child {
+    width: 70%;
+  }
+  main section.about article {
+    width: 70%;
+  }
+  header nav ul li a {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  main section.carusel img {
+    width: 80px;
+    height: 92px;
+  }
+  header nav ul li .logo {
+    width: 150px;
+    height: 74px;
+  }
+}
